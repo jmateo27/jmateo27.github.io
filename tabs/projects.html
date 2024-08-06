@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Mateo</title>
+    <link rel="stylesheet" href="../css/projects.css">
+    <script src="../js/skills.js" defer></script> <!-- Link to the external JavaScript file -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="projects">
+        <h1 style="text-align: center">My Projects</h1>
+        
+        <div class="project-section">
+            <div class="heading-container">
+                <h1>FrisMe - Automated Frisbee Launcher</h1>
+                <p class="project-date">Jan. 2024 - Sep. 2024</p>
+            </div>
+            <div class="video-preview">
+                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/xaikjXwYxQ4" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="project-subsection">
+                <h2>Description</h2>
+                <p style="text-indent: 2em;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales diam ac ex fringilla pulvinar. Maecenas pretium, justo nec auctor malesuada, sapien mauris porttitor dolor, in accumsan velit diam ut arcu. Sed sit amet bibendum nibh, id rhoncus nunc. Ut iaculis id ante vitae lobortis. Integer non posuere sem. Integer pulvinar consequat aliquam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi faucibus blandit augue quis consectetur.
+                </p>  
+            </div>
+
+            <div class="project-subsection">
+                <h2>Highlights</h2>
+                <div class="image-gallery" id="imageGallery1"></div>
+            </div>
+
+            <div class="project-subsection">
+                <h2>Skills Improved</h2>
+                <div class="skills-list" id="skillsList1">
+                    <!-- Skills will be dynamically added here by JavaScript -->
+                </div>
+            </div>
+
+            <div style="text-align: center">
+                Check out the GitHub repo <a href="https://github.com/jmateo27/FrisMe" target="_blank" rel="noopener noreferrer">here</a>.
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check if `addSkill` function is defined
+            if (typeof addSkill === 'function') {
+                displayImages(images1, '#imageGallery1');
+                skills1.forEach(skill => {
+                    addSkill(skill.name, skill.value, '#skillsList1');
+                });
+            } else {
+                console.error('addSkill function is not defined');
+            }
+
+            // Debugging: Verify if elements are added to the container
+            console.log(document.querySelector('#skillsList1').innerHTML);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+@import url('style.css'); /* Import main styles */
+
+.project-section {
+    margin: 10px auto; /* Center the section horizontally */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: var(--header-color); /* Background color from variables */
+    max-width: 720px; /* Limit the width to 720px */
+    width: 100%; /* Fill available width up to max-width */
+}
+
+.project-date {
+    text-align: center; /* Center contents horizontally */
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.video-preview {
+    text-align: center; /* Center contents horizontally */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.project-subsection {
+    margin-bottom: 10px;
+}
+
+.project-files a {
+    color: #007BFF; /* Link color */
+    text-decoration: none;
+}
+
+.project-files a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.responsive-iframe {
+    width: 100%; /* Fill the container width */
+    max-width: 720px; /* Limit the width to 360px */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto;
+    aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio */
+    border: 0;
+}
+
+
+.image-gallery {
+    display: flex; /* Arrange items in a row */
+    flex-wrap: wrap; /* Allow wrapping to the next line if needed */
+    gap: 10px; /* Space between images */
+    max-width: 100%; /* Set maximum width for the gallery */
+    overflow: hidden; /* Hide overflow if needed */
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 20px;
+    justify-content: center; /* Center the items horizontally */
+}
+
+.image-gallery .image-item {
+    flex: 0 1 auto; /* Allow items to shrink if needed but do not grow */
+    max-width: 300px; /* Maximum width for each image item */
+    text-align: center; /* Center align captions */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.image-gallery .image-item img {
+    height: 200px; /* Fixed height for the image */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the entire image is visible */
+    max-width: 100%; /* Prevent stretching beyond container width */
+}
+
+.image-gallery .image-item .caption {
+    margin-top: 5px; /* Space between image and caption */
+    color: black; /* Text color for the caption */
+}
+
+
+.skills-list {
+    width: 100%; /* Fill available width */
+    max-width: 150px; /* Limit the width to 150px */
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /* Remove default list styling */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded corners for the outer border */
+    overflow: hidden; /* Ensure children are clipped to rounded corners */
+}
+
+.skills-item {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space out skill name and value */
+    padding: 8px;
+    border-bottom: 1px solid #ddd; /* Border between items */
+    background-color: rgb(75, 110, 75);
+    color: white;
+}
+
+.skill-name {
+    flex: 1; /* Take up remaining space */
+}
+
+.skill-value {
+    width: 60px; /* Fixed width for value column */
+    text-align: right; /* Align value to the right */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center text vertically */
+    justify-content: flex-end; /* Align content to the right */
+}

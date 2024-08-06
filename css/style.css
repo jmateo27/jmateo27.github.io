@@ -1,0 +1,113 @@
+:root {
+    --background-color: white; /* Body background color */
+    --header-color: rgb(179, 222, 179); /* Gradient color for headers */
+    --header-font-size: 26px;
+    --header2-font-size: 20px;
+    --tabs-font-size: 18px;
+    --padding-size: 10px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Cambria Math', serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: var(--tabs-font-size);
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+}
+
+.heading-container {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.heading-container h1 {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+}
+
+.heading-container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: calc(var(--header-font-size) + var(--padding-size)); /* Adjust height for the green bar */
+    background: linear-gradient(to bottom right, var(--header-color), var(--background-color)); /* Gradient background */
+    z-index: -1;
+    transform: translateY(-50%);
+}
+
+h1 {
+    color: black;
+    text-align: left;
+    position: relative;
+    font-size: var(--header-font-size);
+    padding: var(--padding-size);
+    z-index: 1;
+    margin: 0;
+}
+
+h2 {
+    color: black;
+    text-align: left;
+    position: relative;
+    font-size: var(--header2-font-size);
+    padding: 0;
+    z-index: 1;
+    margin: 0;
+}
+
+p {
+    margin: 0.25em 0 1em;
+    text-indent: 2em; /* Indent the first line of paragraphs */
+}
