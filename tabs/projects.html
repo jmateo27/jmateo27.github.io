@@ -6,27 +6,20 @@
     <title>Justin Mateo</title>
     <link rel="stylesheet" href="../css/projects.css">
     <script src="../js/skills.js" defer></script> <!-- Link to the external JavaScript file -->
+    <script src="../js/common.js" defer></script> <!-- Link to the external JavaScript file -->
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="tabsHeader"></div>
 
-    <section id="projects">
-        <h1 style="text-align: center">My Projects</h1>
-
+    <h1 style="text-align: center">My Projects</h1>
+    <div class="parent-container">
         <div id="projectsContainer"></div>
-    </section>
+    </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            setupTabs(0, '#tabsHeader')
+            console.log(document.querySelector('#tabsHeader').innerHTML);
             displayAllProjects(projects, '#projectsContainer')
             console.log(document.querySelector('#projectsContainer').innerHTML);
         });

@@ -4,23 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Justin Mateo</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/resume.css">
+    <script src="../js/common.js" defer></script> <!-- Link to the external JavaScript file -->
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="tabsHeader"></div>
 
     <section id="resumepdf">
-        <h1>Resume</h1>
-        <embed src="../media/resume.pdf" type="application/pdf" width="100%" height="600px" />
+        <h1 style="text-align: center">My Resume</h1>
+        <embed src="../media/resume.pdf" type="application/pdf" class="pdf-embed" />
     </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            setupTabs(0, '#tabsHeader')
+            console.log(document.querySelector('#tabsHeader').innerHTML);
+        });
+    </script>
 </body>
 </html>

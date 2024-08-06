@@ -1,0 +1,67 @@
+@import url('style.css'); /* Import main styles */
+
+/* Container for the entire section */
+.heading-parent {
+    margin: 10px auto; /* Center the section horizontally */
+    padding: 10px;
+    background-color: white; /* Background color from variables */
+    width: 100%; /* Width adjusts based on content */
+    max-width: 720px; /* Optional: set a maximum width */
+    box-sizing: border-box; /* Include padding and border in the width */
+    overflow: hidden; /* Ensure no overflow */
+    z-index: -10;
+}
+
+.project-section {
+    margin: 10px auto; /* Center the section horizontally */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: var(--header-color); /* Background color from variables */
+    max-width: 720px; /* Limit the width to 720px */
+    width: 100%; /* Fill available width up to max-width */
+    height: auto; /* Allow height to be as big as needed */
+}
+
+/* Style for paragraphs within heading-parent */
+.heading-parent p {
+    margin: 10px 0; /* Add vertical spacing */
+    line-height: 1.5; /* Improve readability */
+}
+
+/* Style for images within heading-parent */
+.heading-parent img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure images are block-level elements */
+    margin: 10px auto; /* Center images horizontally */
+}
+
+/* Container for each heading */
+.heading-container h1{
+    position: relative;
+    display: block; /* Ensure each heading is on its own line */
+    margin: 10px auto; /* Center the container horizontally */
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    text-align: center; /* Center text horizontally */
+    width: fit-content; /* Adjust width to the content */
+}
+
+/* Pseudo-element for the background bar */
+.heading-container h1::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    bottom: 0; /* Position at the bottom of the container */
+    height: calc(var(--header-font-size) + var(--padding-size)); /* Adjust height for the background bar */
+    background: linear-gradient(to bottom right, var(--header-color), var(--background-color)); /* Gradient background */
+    z-index: -1;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%; /* Fit to the width of the heading-container */
+    box-sizing: border-box; /* Include padding and border in the width */
+}

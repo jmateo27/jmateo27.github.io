@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #293920;
     color: white;
     padding: 10px 0;
     width: 100%;
@@ -59,32 +59,12 @@ section {
     padding: 20px;
 }
 
-.heading-container {
-    position: relative;
-    width: 100%;
-    margin: 0;
-    padding: 0; 
-    box-sizing: border-box;
-}
-
 .heading-container h1 {
     position: relative;
     text-align: center;
     width: 100%;
     margin: 0;
     padding: 0; 
-}
-
-.heading-container::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    height: calc(var(--header-font-size) + var(--padding-size)); /* Adjust height for the green bar */
-    background: linear-gradient(to bottom right, var(--header-color), var(--background-color)); /* Gradient background */
-    z-index: -1;
-    transform: translateY(-50%);
 }
 
 h1 {

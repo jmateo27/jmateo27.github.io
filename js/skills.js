@@ -24,18 +24,16 @@ const projects = [
         videoUrl: 'https://www.youtube.com/embed/N_a7jBxSQI0',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales diam ac ex fringilla pulvinar. Maecenas pretium, justo nec auctor malesuada, sapien mauris porttitor dolor, in accumsan velit diam ut arcu. Sed sit amet bibendum nibh, id rhoncus nunc. Ut iaculis id ante vitae lobortis. Integer non posuere sem. Integer pulvinar consequat aliquam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi faucibus blandit augue quis consectetur.',
         images: [
-            { src: '../media/projects/frisme_demo-day.jpg', caption: 'Final Demo Day' },
-            { src: '../media/projects/frisme_under-the-hood.jpg', caption: 'Under the Hood' },
-            { src: '../media/projects/frisme_bbg-io-testing.jpg', caption: 'IO Testing' },
-            { src: '../media/projects/frisme_405-demo.jpg', caption: 'PoC Demo Day' },
-            { src: '../media/projects/frisme_proof-of-concept.jpg', caption: 'PoC' }
+            { src: '../media/projects/spotabone_demo-day.jpg', caption: 'Final Demo Day' },
+            { src: '../media/projects/spotabone_setup.jpg', caption: 'Final Setup' },
+            { src: '../media/projects/spotabone_nfc.jpg', caption: 'NFC Reader' },
         ],
         skills: [
             { name: 'C', value: 6 },
             { name: 'Embedded Development', value: 10 },
             { name: 'Mechanical Design', value: 2 }
         ],
-        githubRepo: 'https://github.com/jmateo27/FrisMe'
+        githubRepo: 'https://github.com/jmateo27/Spot-a-bone'
     }
     // Add more projects as needed
 ];
@@ -174,6 +172,9 @@ function displayAllProjects(projects, containerSelector) {
 
     // Clear any existing content
     container.innerHTML = '';
+
+    // Apply the projects-container class to the container
+    container.classList.add('projects-container');
 
     // Loop through each project and display it
     projects.forEach(project => displayProject(project, containerSelector));

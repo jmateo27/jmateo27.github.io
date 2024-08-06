@@ -1,0 +1,14 @@
+@import url('style.css'); /* Import main styles */
+
+/* Embed styling */
+.pdf-embed {
+    margin: 10px auto; /* Center the section horizontally */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 100%;
+    max-width: 720px; /* Limit the width to 720px */
+    height: auto;
+    border: none; /* Remove default border */
+    aspect-ratio: 9 / 12; /* Maintain a 16:9 aspect ratio */
+}

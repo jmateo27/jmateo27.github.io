@@ -4,45 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Justin Mateo</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <script src="../js/common.js" defer></script> <!-- Link to the external JavaScript file -->
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-        </nav>
-    </header>
-
+    <div id="tabsHeader"></div>
+    
     <section id="about-me">
-        <div class="heading-container">
-            <h1>Summary</h1>
-            <p></p>
+        <div class="heading-parent">
+            <div class="heading-container">
+                <h1>Summary</h1>
+            </div>
+            <p style="text-indent: 15px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales diam ac ex fringilla pulvinar. Maecenas pretium, justo nec auctor malesuada, sapien mauris porttitor dolor, in accumsan velit diam ut arcu. Sed sit amet bibendum nibh, id rhoncus nunc. Ut iaculis id ante vitae lobortis. Integer non posuere sem. Integer pulvinar consequat aliquam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi faucibus blandit augue quis consectetur.
+            </p>
         </div>
-        <div class="heading-container">
-            <h1>My Skills</h1>
-            <p></p>
+
+        <div class="heading-parent">
+            <div class="heading-container">
+                <h1>My Skills</h1>
+            </div>
         </div>
-        <div class="heading-container">
-            <h1>My Technical Experience</h1>
-            <p></p>
+
+        <div class="heading-parent">
+            <div class="heading-container">
+                <h1>My Technical Experience</h1>
+            </div>
         </div>
-        <div class="heading-container">
-            <h1>My Education</h1>
-            <p></p>
+
+        <div class="heading-parent">
+            <div class="heading-container">
+                <h1>My Education</h1>
+            </div>
         </div>
-        <div class="heading-container">
-            <h1>My Goals</h1>
-            <p></p>
+
+        <div class="heading-parent">
+            <div class="heading-container">
+                <h1>My Goals</h1>
+            </div>
         </div>
-        <div class="heading-container">
-            <h1>My Interests</h1>
-            <p></p>
+
+        <div class="heading-parent">
+            <div class="heading-container">
+                <h1>My Interests</h1>
+            </div>
+            <p style="text-indent: 15px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales diam ac ex fringilla pulvinar. Maecenas pretium, justo nec auctor malesuada, sapien mauris porttitor dolor, in accumsan velit diam ut arcu. Sed sit amet bibendum nibh, id rhoncus nunc. Ut iaculis id ante vitae lobortis. Integer non posuere sem. Integer pulvinar consequat aliquam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi faucibus blandit augue quis consectetur.
+            </p>
         </div>
     </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            setupTabs(0, '#tabsHeader')
+            console.log(document.querySelector('#tabsHeader').innerHTML);
+        });
+    </script>
+    
 </body>
 </html>
