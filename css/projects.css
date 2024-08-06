@@ -48,13 +48,15 @@
 .image-gallery {
     display: flex; /* Arrange items in a row */
     flex-wrap: wrap; /* Allow wrapping to the next line if needed */
-    gap: 10px; /* Space between images */
+    gap: 30px; /* Space between images */
     max-width: 100%; /* Set maximum width for the gallery */
     overflow: hidden; /* Hide overflow if needed */
     border: 1px solid black;
     border-radius: 8px;
     padding: 20px;
     justify-content: center; /* Center the items horizontally */
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .image-gallery .image-item {
@@ -86,6 +88,7 @@
     border: 1px solid #ccc;
     border-radius: 8px; /* Rounded corners for the outer border */
     overflow: hidden; /* Ensure children are clipped to rounded corners */
+    margin-top: 10px;
 }
 
 .skills-item {
