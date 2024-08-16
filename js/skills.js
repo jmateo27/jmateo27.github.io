@@ -3,7 +3,7 @@ const projects = [
         name: 'FrisMe - Automated Frisbee Launcher',
         date: 'Jan. 2024 - Sep. 2024',
         videoUrl: 'https://www.youtube.com/embed/xaikjXwYxQ4',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales diam ac ex fringilla pulvinar. Maecenas pretium, justo nec auctor malesuada, sapien mauris porttitor dolor, in accumsan velit diam ut arcu. Sed sit amet bibendum nibh, id rhoncus nunc. Ut iaculis id ante vitae lobortis. Integer non posuere sem. Integer pulvinar consequat aliquam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi faucibus blandit augue quis consectetur.',
+        description: '<strong>SFU Engineering Capstone Project.</strong> Our company, AeroToss, is comprised of six members including: Tony, Laura, Ryan, Sina, Megan and I. The FrisMe is a product that is to be used by Ultimate Frisbee players that are training to catch curved throws better. The system is made up of the following sub-components: the launcher, curve angle adjustment, aim adjustment, machine vision and the user\'s mobile app for controls.<br><br>I worked on embedded system that controls and communicates with these sub-components. The micro-controller that is used is the BeagleBone Green and all embedded controls were written in C. Multi-threading is an important portion of the project that makes it possible with so many systems communicating with eachother. Key concepts from the TCP networking protocol are also used to verify that data is acknowledged. Another big portion I worked on was the electrical design and creation of the system. Power and safety requirements were considered throughout the process.',
         images: [
             { src: '../media/projects/frisme_demo-day.jpg', caption: 'Final Demo Day' },
             { src: '../media/projects/frisme_under-the-hood.jpg', caption: 'Under the Hood' },
@@ -12,7 +12,7 @@ const projects = [
             { src: '../media/projects/frisme_proof-of-concept.jpg', caption: 'PoC' }
         ],
         skills: [
-            { name: 'C', value: 10 },
+            { name: 'C Programming', value: 10 },
             { name: 'Embedded Development', value: 10 },
             { name: 'Mechanical Design', value: 10 }
         ],
@@ -22,14 +22,14 @@ const projects = [
         name: 'Spot-A-Bone',
         date: 'Oct. 2022 - Dec. 2022',
         videoUrl: 'https://www.youtube.com/embed/N_a7jBxSQI0',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales diam ac ex fringilla pulvinar. Maecenas pretium, justo nec auctor malesuada, sapien mauris porttitor dolor, in accumsan velit diam ut arcu. Sed sit amet bibendum nibh, id rhoncus nunc. Ut iaculis id ante vitae lobortis. Integer non posuere sem. Integer pulvinar consequat aliquam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi faucibus blandit augue quis consectetur.',
+        description: '<strong>SFU Embedded and Real Time System Software Project.</strong> Our group is comprised of four members including: Raymond, Sina, Avash and I. Spot-A-Bone is a product that is to be set aside in one\'s home so that they are able to just scan a card with a certain song ',
         images: [
             { src: '../media/projects/spotabone_demo-day.jpg', caption: 'Final Demo Day' },
             { src: '../media/projects/spotabone_setup.jpg', caption: 'Final Setup' },
             { src: '../media/projects/spotabone_nfc.jpg', caption: 'NFC Reader' },
         ],
         skills: [
-            { name: 'C', value: 6 },
+            { name: 'C Programming', value: 6 },
             { name: 'Embedded Development', value: 10 },
             { name: 'Mechanical Design', value: 2 }
         ],
