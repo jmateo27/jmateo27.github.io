@@ -1,9 +1,55 @@
 @import url('style.css'); /* Import main styles */
 
+.three-column-layout {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; /* Flexible columns on the sides, auto for the headshot */
+    gap: 20px; /* Space between the columns */
+    align-items: center; /* Align items vertically centered */
+    padding-top: 0px;
+}
+
+/* For left-side images */
+.small-image-container:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align images to the right */
+    gap: 10px; /* Space between images */
+}
+
+/* For right-side images */
+.small-image-container:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align images to the left */
+    gap: 10px; /* Space between images */
+}
+
+.headshot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headshot {
+    width: 100%; /* Let the image fill its container */
+    max-width: 200px; /* Maximum width for the headshot */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image circular */
+    border: 2px solid #474646; /* Optional: Add a border around the headshot */
+    object-fit: cover; /* Cover the container, maintaining aspect ratio */
+}
+
+/* Styles for the small images */
+.small-image {
+    width: 100px; /* Set the desired width for the small images */
+    height: 100px; /* Half the height of the headshot */
+    object-fit: cover; /* Ensure the images cover the area */
+}
+
 /* Container for the entire section */
 .heading-parent {
-    margin: 10px auto; /* Center the section horizontally */
-    padding: 10px;
+    margin: 0px auto; /* Center the section horizontally */
+    padding: 0px;
     background-color: white; /* Background color from variables */
     width: 100%; /* Width adjusts based on content */
     max-width: 720px; /* Optional: set a maximum width */
@@ -25,7 +71,7 @@
 
 /* Style for paragraphs within heading-parent */
 .heading-parent p {
-    margin: 10px 0; /* Add vertical spacing */
+    margin: 0px 0; /* Add vertical spacing */
     line-height: 1.5; /* Improve readability */
 }
 
@@ -38,7 +84,7 @@
 }
 
 /* Container for each heading */
-.heading-container h1{
+.heading-container h1 {
     position: relative;
     display: block; /* Ensure each heading is on its own line */
     margin: 10px auto; /* Center the container horizontally */
@@ -64,4 +110,53 @@
     border-radius: 8px;
     width: 100%; /* Fit to the width of the heading-container */
     box-sizing: border-box; /* Include padding and border in the width */
+}
+
+/* Container for the entire section */
+#about-me {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Define three columns */
+    gap: 20px; /* Space between columns */
+    padding: 20px;
+}
+
+/* Container for image columns */
+.about-me-image {
+    display: flex;
+    flex-direction: column; /* Stack image-wrapper vertically */
+    gap: 10px; /* Space between image-wrapper elements */
+}
+
+/* Wrapper for each image and caption */
+.image-wrapper {
+    display: flex;
+    flex-direction: column; /* Stack image and caption vertically */
+    align-items: center; /* Center image and caption horizontally */
+    gap: 5px; /* Space between image and caption */
+    padding-bottom: 20px;
+}
+
+/* Style for individual images */
+.image-wrapper img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    border: 2px solid black; /* Add a black border around the image */
+    padding: 5px; /* Optional: Add padding between image and border */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+/* Style for captions */
+.caption {
+    text-align: center; /* Center caption text */
+    font-size: 0.9em; /* Slightly smaller text */
+    color: #666; /* Gray color for caption */
+    margin: 0; /* Remove default margin */
+}
+
+/* Content column styling */
+.about-me-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
