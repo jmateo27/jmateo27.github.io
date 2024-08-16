@@ -23,11 +23,18 @@
 
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust min width and fraction units */
-    gap: calc(25% / 2); /* Adjust the gap between grid items as needed */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Auto-fits up to 2 columns */
+    gap: calc(25% / 3); /* Adjust the gap between grid items as needed */
     max-width: 1440px; /* Optional: set a maximum width for the grid */
     width: 100%;
     box-sizing: border-box; /* Ensure padding is included in width calculations */
+    justify-content: center; /* Center items if there's only one in a row */
+}
+
+@media (min-width: 420px) {
+    .projects-container {
+        grid-template-columns: repeat(2, minmax(200px, 1fr)); /* 2 columns at most on larger screens */
+    }
 }
 
 .project-date {
@@ -99,7 +106,7 @@
 
 .skills-list {
     width: 100%; /* Fill available width */
-    max-width: 150px; /* Limit the width to 150px */
+    max-width: 250px; /* Limit the width to 150px */
     padding: 0;
     margin: 0;
     list-style-type: none; /* Remove default list styling */
