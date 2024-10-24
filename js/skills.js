@@ -71,6 +71,107 @@ const projects = [
         ],
         githubRepo: 'https://github.com/jmateo27/Piano-Tiles'
     },
+    {
+        name: 'Ambilamp',
+        date: 'Oct. 2019 - Dec. 2019',
+        videoUrl: 'https://www.youtube.com/embed/IG-oa3-ogV8',
+        description: '<strong>SFU First-Year Design Group Project.</strong>',
+        images: [],
+        skills: [
+            { name: 'Arduino Development', value: 10 },
+            { name: 'Electronics', value: 5 }
+        ],
+        githubRepo: 'https://github.com/jmateo27/Ambilamp'
+    },
+    {
+        name: 'S-Talk - Terminal-Based Real-Time Chat Application',
+        date: 'Oct. 2022',
+        videoUrl: '',
+        description: '<strong>SFU Operating Systems Course Assignment.</strong>',
+        images: [],
+        skills: [
+            { name: 'C Programming', value: 5 },
+            { name: 'Socket Programming', value: 10 }
+        ],
+        githubRepo: ''
+    },
+    {
+        name: 'Graduate Admissions System',
+        date: 'Oct. 2020 - Nov. 2020',
+        videoUrl: '',
+        description: '<strong>SFU Software Design and Analysis Project.</strong>',
+        images: [],
+        skills: [
+            { name: 'C++ Programming', value: 10 },
+            { name: 'Data Structures & Algorithms', value: 10 }
+        ],
+        githubRepo: 'https://github.com/jmateo27/ENSC-251-Final-Project'
+    },
+    {
+        name: 'EmoTune - Emotion Detection with Audio Data',
+        date: 'Jan. 2024 - May. 2024',
+        videoUrl: '',
+        description: '<strong>SFU Affective Computing Project.</strong>',
+        images: [],
+        skills: [
+            { name: 'Python Programming', value: 10 },
+            { name: 'Data Analysis w/ Python', value: 10 },
+            { name: 'Machine Learning', value: 10 }
+        ],
+        githubRepo: ''
+    },
+    {
+        name: 'Binary Neural Network on FPGA',
+        date: 'Feb. 2023 - Apr. 2023',
+        videoUrl: '',
+        description: '<strong>SFU Digital Systems Design Project.</strong>',
+        images: [],
+        skills: [
+            { name: 'VHDL Design', value: 10 },
+            { name: 'Python Programming', value: 5 },
+            { name: 'Machine Learning', value: 10 }
+        ],
+        githubRepo: 'https://github.com/jmateo27/BNN-on-FPGA'
+    },
+    {
+        name: 'Titanic Survival Predictor',
+        date: 'Feb. 2022 - Apr. 2022',
+        videoUrl: '',
+        description: '<strong>SFU Artificial Intelligence Project.</strong>',
+        images: [],
+        skills: [
+            { name: 'Python Programming', value: 10 },
+            { name: 'Data Analysis w/ Python', value: 10 },
+            { name: 'Machine Learning', value: 10 }
+        ],
+        githubRepo: ''
+    },
+    {
+        name: 'Vending Machine Controller',
+        date: 'May. 2020 - Jun. 2020',
+        videoUrl: '',
+        description: '<strong>SFU Digital Logic & Design Project.</strong>',
+        images: [],
+        skills: [
+            { name: 'VHDL Design', value: 10 },
+            { name: 'System Design', value: 10 }
+        ],
+        githubRepo: 'https://github.com/jmateo27/Vending-Machine-Controller'
+    },
+    {
+        name: 'Rush Hour in Java',
+        date: 'Feb. 2021 - Apr. 2021',
+        videoUrl: '',
+        description: '<strong>SFU Data Structures & Programming Project.</strong>',
+        images: [],
+        skills: [
+            { name: 'Java Programming', value: 10 },
+            { name: 'Data Structures', value: 5 },
+            { name: 'Greedy Algorithm Design', value: 10 }
+        ],
+        githubRepo: ''
+    },
+    
     // Add more projects as needed
 ];
 
